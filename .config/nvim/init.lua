@@ -1,0 +1,7 @@
+require "ajsarmah.remaps"
+require "ajsarmah.packer"
+require "ajsarmah.colors"
+require "ajsarmah.treesitter"
+require "ajsarmah.options"
+require "ajsarmah.lsp"
+require "ajsarmah.auto_complete"
