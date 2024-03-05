@@ -7,7 +7,7 @@ My window manager and neovim configuration
 
 1. zsh shell with oh my zsh with powerlevel10k theme
 2. qtile window manager (psutils and iwlib)
-3. neovim with packer
+3. neovim with packer package manager
 4. picom
 5. rofi
 6. a valid nerd font
