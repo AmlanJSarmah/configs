@@ -3,10 +3,11 @@ require('lspconfig').lua_ls.setup({})
 require('lspconfig').clangd.setup({})
 require('lspconfig').pyright.setup({})
 require('lspconfig').tsserver.setup({})
+require('lspconfig').gopls.setup({})
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  ensure_installed = {'lua_ls', 'pyright', 'clangd', 'tsserver'},
+  ensure_installed = {'lua_ls', 'pyright', 'clangd', 'tsserver', 'gopls'},
 })
 
 local cmp = require('cmp')
