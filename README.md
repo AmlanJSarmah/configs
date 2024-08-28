@@ -1,17 +1,17 @@
 # configs
-My window manager and neovim configuration
+Qtile and Neovim configuration
 
 
 
 ## Requirements 
 
-1. zsh shell with oh my zsh with powerlevel10k theme
-2. qtile window manager (psutils and iwlib)
-3. neovim with packer package manager
-4. picom
-5. rofi
-6. a valid nerd font
-7. dmenu
+1. Zsh shell with oh my zsh and powerlevel10k theme
+2. Qtile window manager (psutils and iwlib installed using pip)
+3. Neovim with packer package manager
+4. Picom
+5. Rofi
+6. JetBrains Mono Nerd Font
+7. Dmenu
 
 
 ## Screenshots
