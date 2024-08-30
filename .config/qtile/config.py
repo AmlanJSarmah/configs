@@ -9,7 +9,8 @@ class Colors:
     #DARK: str = "282a36" # Tokyo night
     DARK: str = "1d1f21" # Alacritty default
     WHITE: str = "ffffff"
-    BORDER_ACTIVE: str = "e1acff"
+    # BORDER_ACTIVE: str = "e1acff" #A magenta like color
+    BORDER_ACTIVE: str = "6272a4"
     BORDER_INACTIVE: str = "1D2330" 
     WORKSPACE_BLOCK_COLOR: str = "6272a4"
 
@@ -95,15 +96,15 @@ layouts = [
 
 
 # groups = [Group(i) for i in "123456789"]
-groups = [Group("1", label=""),
+groups = [Group("1", label=""),
           Group("2", label="", layout="max"),
-          Group("3", label="󰭹", layout="max"),
-          Group("4", label="󰠮", layout="max"),
-          Group("5", label="󰈹"),
-          Group("6", label=""),
+          Group("3", label=""),
+          Group("4", label="", layout="max"),
+          Group("5", label=""),
+          Group("6", label=""),
           Group("7", label="󰎆"),
-          Group("8", label=""),
-          Group("9", label="", layout="max"),
+          Group("8", label="󰙯", layout="max"),
+          Group("9", label=""),
           Group("0", label="")]
 
 for i in groups:
@@ -142,7 +143,7 @@ groups.append(
                 y=0.1,
                 opacity=0.75,
             ),
-       ]
+            ]
     )
 )
 
@@ -155,7 +156,7 @@ keys.extend([
 ########################################## Bar and Widgets ####################################################
 
 widget_defaults = dict(
-    font='Fira Code Nerd Font',
+    font='JetBrains Mono Nerd Font',
     fontsize=15,
     padding=7,
 )
@@ -204,13 +205,13 @@ screens = [
                 widget.Battery(format='  {char} {percent:2.0%}', unknown_char="", padding=0),
                 separator,
                 separator,
-                widget.Wlan(format='直  {essid}',disconnected_message="睊  Disconnected",interface='wlp3s0',padding=0), 
+                widget.Wlan(format='  {essid}',disconnected_message="  Disconnected",interface='wlp3s0',padding=0), 
                 separator,
                 separator,
                 widget.Clock(format='  %H:%M', padding=0),
                 separator,
                 separator,
-                widget.Clock(format = '  %a %d/%m/%y',padding=0),
+                widget.Clock(format = '  %a %d/%m/%y',padding=0),
                 separator,
                 separator,
                 widget.QuickExit(default_text=" ", countdown_format=" {}", padding=0),
