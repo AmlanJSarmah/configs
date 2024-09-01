@@ -16,5 +16,7 @@ Qtile and Neovim configuration
 
 ## Screenshots
 
-![2024-02-20-09:38:09-screenshot](https://github.com/AmlanJSarmah/configs/assets/99042379/e1533fa4-0916-4865-acea-d9b0e9865f04)
-![2024-02-20-09:38:34-screenshot](https://github.com/AmlanJSarmah/configs/assets/99042379/0b2bd98a-5dcc-477f-9822-d1aeec65908b)
+![DE_1](https://github.com/user-attachments/assets/fd5eca68-9b90-4b12-a4ab-027b3a93ab1b)
+![DE_2](https://github.com/user-attachments/assets/353135b2-d07c-4154-b753-2fb2bad7a974)
+![DE_3](https://github.com/user-attachments/assets/a67dba03-1cb1-4612-9b1d-4c2aa3933916)
+![DE_4](https://github.com/user-attachments/assets/c9faf02d-ec21-4f81-8bfe-024a1ad9ba3e)
