@@ -1,6 +1,5 @@
-#!/bin/bash 
+#!/usr/bin/bash 
 
 nitrogen --restore &
+vktablet &
 picom &
-dunst &
-blueman-applet &

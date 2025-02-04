@@ -1,0 +1,18 @@
+[window]
+
+opacity = 1
+
+padding.x = 4
+padding.y = 4
+
+decorations = "Full"
+decorations_theme_variant = "Dark" 
+
+[font]
+
+normal.family = "Sauce Code Pro Nerd Font"
+bold.family = "Sauce Code Pro Nerd Font"
+italic.family = "Sauce Code Pro Nerd Font"
+bold_italic.family = "Sauce Code Pro Nerd Font"
+
+size = 8.5

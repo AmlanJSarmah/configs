@@ -2,7 +2,7 @@
 import os
 import subprocess
 from libqtile.config import Group, Key, Screen, ScratchPad, DropDown
-from libqtile.command import lazy
+from libqtile.lazy import lazy
 from libqtile import layout, bar, widget, hook
 
 class Colors:
@@ -59,8 +59,8 @@ keys = [
     Key([mod], "s", lazy.spawn(str(home) + "/.local/bin/screenshot.sh all"),desc="Take a screenshot of entire screen"),
     Key([mod, "shift"], "s", lazy.spawn(str(home) + "/.local/bin/screenshot.sh window"),desc="Take a screenshot of active window"),
     Key([mod, "control"], "s", lazy.spawn(str(home) + "/.local/bin/screenshot.sh select"),desc="Take a screenshot of selected area"),
-    Key([mod, "shift"], "v", lazy.spawn(str(home) + "/.local/bin/changevolume.sh down"),desc="Decrease volume"),
-    Key([mod], "v", lazy.spawn(str(home) + "/.local/bin/changevolume.sh up"),desc="Increases volume"),
+    #Key([mod, "shift"], "v", lazy.spawn(str(home) + "/.local/bin/changevolume.sh down"),desc="Decrease volume"),
+    #Key([mod], "v", lazy.spawn(str(home) + "/.local/bin/changevolume.sh up"),desc="Increases volume"),
 ]
 
 
@@ -156,7 +156,7 @@ keys.extend([
 ########################################## Bar and Widgets ####################################################
 
 widget_defaults = dict(
-    font='JetBrains Mono Nerd Font',
+    font='Sauce Code Pro Nerd Font',
     fontsize=15,
     padding=7,
 )
@@ -193,28 +193,17 @@ screens = [
                 widget.Spacer(),
                 widget.Systray(padding=10),
                 separator,
-                widget.Mpris2(name="spotify",stop_pause_text="  {track}",playing_text="  {track}",display_metadata=["xesam:title", "xesam:artist"], objname="org.mpris.MediaPlayer2.spotify"),
-                separator,
-                separator,
                 widget.TextBox(text=" ",  padding=0, mouse_callbacks={"Button1":lazy.spawn(browser + " -new-window github.com/AmlanJSarmah")}),
-                separator,
-                separator,
-                widget.TextBox(text=" ",  padding=0, mouse_callbacks={"Button1":lazy.spawn(str(home) + "/.local/bin/changevolume.sh mute"), "Button4":lazy.spawn(str(home) + "/.local/bin/changevolume.sh up"), "Button5":lazy.spawn(str(home) + "/.local/bin/changevolume.sh down")}),
-                separator,
                 separator,
                 widget.Battery(format='  {char} {percent:2.0%}', unknown_char="", padding=0),
                 separator,
-                separator,
                 widget.Wlan(format='  {essid}',disconnected_message="  Disconnected",interface='wlp3s0',padding=0), 
-                separator,
                 separator,
                 widget.Clock(format='  %H:%M', padding=0),
                 separator,
-                separator,
                 widget.Clock(format = '  %a %d/%m/%y',padding=0),
                 separator,
-                separator,
-                widget.QuickExit(default_text=" ", countdown_format=" {}", padding=0),
+                widget.QuickExit(default_text=" ", countdown_format=" {}", padding=0),
                 separator,
             ],
             25,
