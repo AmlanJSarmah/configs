@@ -6,11 +6,11 @@ Qtile and Neovim configuration
 ## Requirements 
 
 1. Zsh shell with oh my zsh and powerlevel10k theme
-2. Qtile window manager (psutils and iwlib installed using pip)
+2. Qtile window manager (with iwlib instaled via distro's package manager)
 3. Neovim with packer package manager
 4. Picom
 5. Rofi
-6. JetBrains Mono Nerd Font
+6. Sauce code pro nerd fonts, font awesome icons.
 7. Dmenu
 
 
